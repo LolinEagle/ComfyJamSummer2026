@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scAnimateSprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scAnimateSprite",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

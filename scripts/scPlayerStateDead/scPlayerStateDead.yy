@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scPlayerStateDead",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scPlayerStateDead",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
