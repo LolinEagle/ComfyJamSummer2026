@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oTree",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oNpc",
+  "eventList":[],
   "managed":true,
-  "name":"oTree",
-  "overriddenProperties":[],
+  "name":"oNpc",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entityShadow","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+  ],
   "parent":{
     "name":"Entity",
     "path":"folders/Objects/Entity.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"pEntity",
+    "path":"objects/pEntity/pEntity.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTree",
-    "path":"sprites/sTree/sTree.yy",
+    "name":"sNpcIdle",
+    "path":"sprites/sNpcIdle/sNpcIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

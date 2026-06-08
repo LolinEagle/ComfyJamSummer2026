@@ -1,17 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oTree",
+  "%Name":"oIntro",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTree",
+  "name":"oIntro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entity",
-    "path":"folders/Objects/Entity.yy",
+    "name":"Cutsceane",
+    "path":"folders/Objects/GameLogic/Cutsceane.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"pCutscene",
+    "path":"objects/pCutscene/pCutscene.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sTree",
-    "path":"sprites/sTree/sTree.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

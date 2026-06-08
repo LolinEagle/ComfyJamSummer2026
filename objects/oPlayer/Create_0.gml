@@ -11,6 +11,7 @@ collisionMap = layer_tilemap_get_id(layer_get_id("tsCol"));
 
 // State
 state = scPlayerStateFree;
+lastState = state
 
 // Sprite
 localFrame = 0;
@@ -37,7 +38,7 @@ distanceHook = TILE_SIZE * 6;
 hook = 0;
 hookX = 0;
 hookY = 0;
-//hookSize = sprite_get_width(sHookChain);
+// hookSize = sprite_get_width(sHookChain);
 
 // Bonk
 speedBonk = 2;

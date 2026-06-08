@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scDrawSet",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"GameLogic",
+    "path":"folders/Scripts/GameLogic.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

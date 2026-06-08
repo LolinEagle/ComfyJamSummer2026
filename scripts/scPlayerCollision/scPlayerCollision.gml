@@ -6,7 +6,7 @@ function scPlayerCollision(){
 	// Horizontal Tiles
 	if (tilemap_get_at_pixel(collisionMap, x + hSpeed, y)){
 		x -= x mod TILE_SIZE;
-		if (sign(hSpeed) == 1){x += TILE_SIZE - 1;}
+		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
 		hSpeed = 0;
 		_collision = true;
 	}
@@ -19,8 +19,7 @@ function scPlayerCollision(){
 	while (_entityCount > 0){
 		var _entityCheck = _entityList[| 0];
 		if (_entityCheck.entityCollision == true){
-			if (sign(hSpeed) == -1){_snapX = _entityCheck.bbox_right + 1;}
-			else{_snapX = _entityCheck.bbox_left - 1;}
+			_snapX = sign(hSpeed) == -1 ? _entityCheck.bbox_right + 1 : _entityCheck.bbox_left - 1;
 			x = _snapX;
 			hSpeed = 0;
 			_collision = true;
@@ -34,13 +33,14 @@ function scPlayerCollision(){
 	x += hSpeed;
 
 	// Clear list
-	ds_list_clear(_entityList);#endregion
+	ds_list_clear(_entityList);
+	#endregion
 
 	#region Vertical
 	// Vertical Tiles
 	if (tilemap_get_at_pixel(collisionMap, x, y + vSpeed)){
 		y -= y mod TILE_SIZE;
-		if (sign(vSpeed) == 1){y += TILE_SIZE - 1;}
+		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;
 		vSpeed = 0;
 		_collision = true;
 	}
@@ -53,8 +53,7 @@ function scPlayerCollision(){
 	while (_entityCount > 0){
 		var _entityCheck = _entityList[| 0];
 		if (_entityCheck.entityCollision == true){
-			if (sign(vSpeed) == -1){_snapY = _entityCheck.bbox_bottom + 1;}
-			else{_snapY = _entityCheck.bbox_top - 1;}
+			_snapY = sign(vSpeed) == -1 ? _entityCheck.bbox_bottom + 1 : _entityCheck.bbox_top - 1;
 			y = _snapY;
 			vSpeed = 0;
 			_collision = true;
@@ -68,7 +67,8 @@ function scPlayerCollision(){
 	y += vSpeed;
 
 	// Destroy list
-	ds_list_destroy(_entityList);#endregion
+	ds_list_destroy(_entityList);
+	#endregion
 
 	return _collision;
 }

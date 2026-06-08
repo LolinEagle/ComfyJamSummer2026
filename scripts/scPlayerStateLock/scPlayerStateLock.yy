@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scAnimateSprite",
+  "%Name":"scPlayerStateLock",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scAnimateSprite",
+  "name":"scPlayerStateLock",
   "parent":{
-    "name":"GameLogic",
-    "path":"folders/Scripts/GameLogic.yy",
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

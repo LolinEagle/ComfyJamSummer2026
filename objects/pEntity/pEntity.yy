@@ -12,8 +12,8 @@
   "name":"pEntity",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameLogic",
-    "path":"folders/Objects/GameLogic.yy",
+    "name":"Entity",
+    "path":"folders/Objects/Entity.yy",
   },
   "parentObjectId":null,
   "persistent":false,

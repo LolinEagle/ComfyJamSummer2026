@@ -15,7 +15,8 @@ function scPlayerStateFree(){
 		sprite_index = sprite;
 	}
 	if (_oldSprite != sprite_index) localFrame = 0;
-	scAnimateSprite();#endregion
+	scAnimateSprite();
+	#endregion
 
 	#region Change State
 	if (keyUse){
@@ -47,7 +48,7 @@ function scPlayerStateFree(){
 		if (activate == noone){
 			if (global.iLifted != noone) scPlayerThrow();// Throw
 		} else {
-			scExecuteArray(
+			script_execute_ext(
 				activate.entityActivateScript, activate.entityActivateArgs
 			);
 			
@@ -59,7 +60,8 @@ function scPlayerStateFree(){
 				}
 			}
 		}
-	}#endregion
+	}
+	#endregion
 	
 	#region Items
 	// Use Items
@@ -92,5 +94,6 @@ function scPlayerStateFree(){
 			if (global.playerItemEquipt = _i)
 				global.playerItem = global.playerItemEquiptArray[_i];
 		}
-	}#endregion
+	}
+	#endregion
 }

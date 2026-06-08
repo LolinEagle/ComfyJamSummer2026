@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scAnimateSprite",
+  "%Name":"EntityHit",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scAnimateSprite",
+  "name":"EntityHit",
   "parent":{
     "name":"GameLogic",
     "path":"folders/Scripts/GameLogic.yy",

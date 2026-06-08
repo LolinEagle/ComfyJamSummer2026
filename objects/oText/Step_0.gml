@@ -16,9 +16,9 @@ if (responseSelected > _max) responseSelected = _min;
 if (responseSelected < _min) responseSelected = _max;
 
 // What to do next
-if (KEY_USE || KEY_ATTACK_PRESSED){
+if (KEY_USE || KEY_ATTACK_PRESSED || keyboard_check_pressed(vk_enter)){
 	var _messageLength = string_length(message);
-	
+
 	// If end of message
 	if (textProgress >= _messageLength){
 		// If have responses
@@ -31,18 +31,13 @@ if (KEY_USE || KEY_ATTACK_PRESSED){
 		}
 		
 		// Destroy the Text Box
-		if (instance_exists(oIntro) && global.gameCutscenes > 0){
-			with (oIntro) whatToDo = true;
-			global.gameCutscenes--;
-		}
 		instance_destroy();
 		
 		// Text Queued
-		if (instance_exists(oTextQueued)){
+		if (instance_exists(oTextQueued))
 			with (oTextQueued) ticket--;
-		} else {
-			if (!instance_exists(oIntro)) with(oPlayer) state = lastState;
-		}
+		else
+			with (oPlayer) state = lastState;
 	} else {
 		if (textProgress > 2) textProgress = _messageLength;
 	}

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scAnimateSprite",
+  "%Name":"TextBoxFunction",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scAnimateSprite",
+  "name":"TextBoxFunction",
   "parent":{
     "name":"GameLogic",
     "path":"folders/Scripts/GameLogic.yy",
