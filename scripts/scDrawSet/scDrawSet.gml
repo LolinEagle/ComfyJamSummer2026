@@ -1,4 +1,4 @@
-function scDrawSet(_font, _halign, _valign){
+function scDrawSet(_font, _halign = fa_middle, _valign = fa_center){
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 	draw_set_font(_font);

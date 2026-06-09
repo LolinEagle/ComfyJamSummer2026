@@ -8,8 +8,8 @@
   "name":"oTree",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entity",
-    "path":"folders/Objects/Entity.yy",
+    "name":"Objects",
+    "path":"folders/Objects/GameLogic/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

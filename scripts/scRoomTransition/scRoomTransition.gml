@@ -1,0 +1,12 @@
+function scRoomTransition(){
+	///@arg Type
+	///@arg TargetRoom
+	if (!instance_exists(oTransition)){
+		with (instance_create_depth(0, 0, -10000, oTransition)){
+			type = argument[0];
+			target = argument[1];
+		}
+	} else {
+		show_debug_message("Try to Transition while Transition is happening");
+	}
+}

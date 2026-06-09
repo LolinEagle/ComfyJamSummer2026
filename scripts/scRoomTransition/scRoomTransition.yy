@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scRoomTransition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scRoomTransition",
+  "parent":{
+    "name":"GameLogic",
+    "path":"folders/Scripts/GameLogic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

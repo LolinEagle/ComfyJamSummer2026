@@ -1,8 +1,8 @@
 // Textbox
 x1 = RES_W_HALF;
 x2 = RES_W_HALF;
-x1Target = 128;
-x2Target = RES_W - 128;
+x1Target = 96;
+x2Target = RES_W - 96;
 y1 = RES_H_HALF;
 y2 = RES_H - 8;
 

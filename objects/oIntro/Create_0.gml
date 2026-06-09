@@ -1,3 +1,5 @@
+playerX = oPlayer.x;
+playerY = oPlayer.y;
 oPlayer.state = scPlayerStateLock;
 
 with (oNpc){

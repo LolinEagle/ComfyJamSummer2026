@@ -47,8 +47,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Npc",
-    "path":"folders/Sprites/Npc.yy",
+    "name":"Character",
+    "path":"folders/Sprites/Character.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

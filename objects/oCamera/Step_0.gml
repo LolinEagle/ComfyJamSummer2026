@@ -7,8 +7,8 @@ if (instance_exists(follow)){
 }
 
 // Move toward
-x += (xTo - x) / 8;
-y += (yTo - y) / 8;
+x += (xTo - x) / 4;
+y += (yTo - y) / 4;
 
 // Maintain camera in the room
 x = clamp(x, viewWidthHalf, room_width - viewWidthHalf);

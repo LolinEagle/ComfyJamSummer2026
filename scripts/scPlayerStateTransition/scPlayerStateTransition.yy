@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scPlayerStateTransition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scPlayerStateTransition",
+  "parent":{
+    "name":"State",
+    "path":"folders/Scripts/Player/State.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
