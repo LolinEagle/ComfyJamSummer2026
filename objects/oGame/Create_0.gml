@@ -5,20 +5,26 @@ surface_resize(application_surface, RES_W, RES_H);
 // audio_group_load(SFX);
 
 // Game
-global.gameDebug = false;
-global.gameSaveSlot = 0;
-global.gamePaused = false;
-global.gamePausedBattle = false;
-global.gameSelected = false;
-global.gameCutscenes = 0;
+global.debug = false;
+global.saveSlot = 0;
+global.paused = false;
+global.pausedBattle = false;
+global.selected = false;
+global.cutscenes = 0;
+global.cutscenesEnd[CUTSCENES.TYPE_COUNT - 1] = false;
+
+enum CUTSCENES{
+	INTRO,
+	TYPE_COUNT
+}
 
 // Option
-global.gameOST = 0.5;
-global.gameSFX = 0.5;
-global.gameUp = ord("Z");
-global.gameLeft = ord("Q");
-global.gameDown = ord("S");
-global.gameRight = ord("D");
+global.ost = 0.5;
+global.sfx = 0.5;
+global.up = ord("Z");
+global.left = ord("Q");
+global.down = ord("S");
+global.right = ord("D");
 
 // Text
 global.questStatus = ds_map_create();

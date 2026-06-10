@@ -7,8 +7,8 @@ x1 = lerp(x1, x1Target, lerpProgress);
 x2 = lerp(x2, x2Target, lerpProgress);
 
 // Input & Response Selected
-keyUp	= keyboard_check_pressed(global.gameUp);
-keyDown = keyboard_check_pressed(global.gameDown);
+keyUp	= keyboard_check_pressed(global.up);
+keyDown = keyboard_check_pressed(global.down);
 responseSelected += keyDown - keyUp;
 var _max = array_length(responses) - 1;
 var _min = 0;
@@ -31,7 +31,7 @@ if (KEY_USE || KEY_ATTACK_PRESSED || keyboard_check_pressed(vk_enter)){
 		}
 		
 		// Destroy the Text Box
-		if (cutscenes) global.gameCutscenes++;
+		if (cutscenes) global.cutscenes++;
 		instance_destroy();
 		
 		// Text Queued

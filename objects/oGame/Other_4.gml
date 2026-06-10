@@ -1,2 +1,2 @@
 // Layer Set Visible
-if (!global.gameDebug) layer_set_visible("tsCol", false);
+if (!global.debug) layer_set_visible("tsCol", false);

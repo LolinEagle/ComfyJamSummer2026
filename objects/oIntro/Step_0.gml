@@ -1,6 +1,6 @@
 event_inherited();
 
-switch (global.gameCutscenes){
+switch (global.cutscenes){
 	case 1:
 		if (oNpc.x > 1056){
 			oNpc.x -= 2;
@@ -15,7 +15,7 @@ switch (global.gameCutscenes){
 			scNewTextBox("You are awake, you should\ngo back to sleep.", 1);
 			scNewTextBox("You shouldn't press WASD\nto move.", 1);
 
-			global.gameCutscenes = 2;
+			global.cutscenes = 2;
 		}
 	break;
 	case 2:
@@ -24,13 +24,13 @@ switch (global.gameCutscenes){
 			oPlayer.y <= playerY - 64 || oPlayer.y >= playerY + 64
 		){
 			oPlayer.state = scPlayerStateLock;
-			global.gameCutscenes = 3;
+			global.cutscenes = 3;
 		}
 	break;
 	case 3:
 		scNewTextBox("Whatever...", 1);
 		scNewTextBox("Just don't go to the east.", 1, true);
-		global.gameCutscenes = 4;
+		global.cutscenes = 4;
 	break;
 	case 4:
 		// Wait
@@ -45,6 +45,7 @@ switch (global.gameCutscenes){
 			oNpc.x += 2;
 		} else {
 			oPlayer.state = scPlayerStateFree;
+			global.cutscenesEnd[CUTSCENES.INTRO] = true;
 			with (oNpc) instance_destroy();
 			instance_destroy()
 		}

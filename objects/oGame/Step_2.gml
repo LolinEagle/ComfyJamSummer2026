@@ -3,14 +3,14 @@ if (
 	keyboard_check_pressed(vk_escape) &&
 	// !instance_exists(oTransition) &&
 	room != room_first &&
-	!global.gameSelected
+	!global.selected
 ){
 	// Menu
-	global.gameSelected = false;
+	global.selected = false;
 	
 	// Core Pause
-	global.gamePaused = !global.gamePaused;
-	if (global.gamePaused){
+	global.paused = !global.paused;
+	if (global.paused){
 		// Pause
 		with(all){
 			gamePausedImageSpeed = image_speed;

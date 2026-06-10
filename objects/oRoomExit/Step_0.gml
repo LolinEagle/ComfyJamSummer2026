@@ -8,12 +8,11 @@ if (instance_exists(oPlayer) && position_meeting(oPlayer.x, oPlayer.y, id)){
 		global.targetSprite = oPlayer.sprite;
 		global.targetSpriteRun = oPlayer.spriteRun;
 			
-		//Transition
-		with (oPlayer){state = scPlayerStateTransition;}
-		if(transitionType != -1){scRoomTransition(transitionType, targetRoom);}
-		else{scRoomTransition(TRANS_TYPE.SLIDE, targetRoom);}
+		// Transition
+		with (oPlayer) state = scPlayerStateTransition;
+		scRoomTransition(transitionType, targetRoom);
 
-		//End the Transition
+		// End the Transition
 		instance_destroy();
 	}
 }

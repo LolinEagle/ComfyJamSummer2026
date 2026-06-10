@@ -1,4 +1,4 @@
-if (global.gamePaused) return;
+if (global.paused) return;
 
 // Draw set
 scDrawSet(fRoboto24, fa_center, fa_top);

@@ -1,5 +1,5 @@
 ///@desc Entity Loop
-if (!global.gamePaused) return;
+if (!global.paused) return;
 
 depth = -bbox_bottom;
 

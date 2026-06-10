@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scPlayerStateTransition",
   "parent":{
-    "name":"State",
-    "path":"folders/Scripts/Player/State.yy",
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -33,6 +33,6 @@ if (
 #endregion
 
 // Debug
-if (global.gameDebug){
+if (global.debug){
 	if (keyboard_check_pressed(vk_numpad0)) game_restart();
 }

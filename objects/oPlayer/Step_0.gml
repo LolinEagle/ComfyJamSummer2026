@@ -1,10 +1,10 @@
 ///@desc Player Logic
 
 // Input
-keyLeft          = keyboard_check(global.gameLeft);
-keyRight         = keyboard_check(global.gameRight);
-keyUp            = keyboard_check(global.gameUp);
-keyDown          = keyboard_check(global.gameDown);
+keyLeft          = keyboard_check(global.left);
+keyRight         = keyboard_check(global.right);
+keyUp            = keyboard_check(global.up);
+keyDown          = keyboard_check(global.down);
 keyUse           = KEY_USE;
 keyReload        = KEY_RELOAD;
 keyAttackPressed = KEY_ATTACK_PRESSED;
@@ -22,7 +22,7 @@ inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 
 // State
-if (!global.gamePaused){
+if (!global.paused){
 	script_execute(state);
 	invulnerable = max(invulnerable - 1, 0);
 	flash = max(flash - 0.05, 0);
