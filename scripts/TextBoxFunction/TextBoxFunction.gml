@@ -26,7 +26,7 @@ function scNewTextBox(_message, _background = 0, _cutscenes = false){
 	}
 
 	with (oPlayer){
-		if (state != scPlayerStateLock && !instance_exists(oIntro)){
+		if (state != scPlayerStateLock){
 			lastState = state;
 			state = scPlayerStateLock;
 		}

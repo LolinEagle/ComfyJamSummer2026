@@ -2,10 +2,12 @@
   "$GMTileSet":"v1",
   "%Name":"tsTiles",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[13,16,15,2,5,12,26,1,4,27,14,3,24,23,25,11,],},
-    {"$GMAutoTileSet":"","%Name":"autotile_2","closed_edge":false,"name":"autotile_2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[18,21,20,7,10,17,31,6,9,32,19,8,29,28,30,22,],},
-    {"$GMAutoTileSet":"","%Name":"autotile_3","closed_edge":false,"name":"autotile_3","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[46,49,48,35,38,45,59,34,37,60,47,36,57,56,58,44,],},
-    {"$GMAutoTileSet":"","%Name":"autotile_4","closed_edge":false,"name":"autotile_4","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[51,54,53,40,43,50,64,39,42,65,52,41,62,61,63,55,],},
+    {"$GMAutoTileSet":"","%Name":"Forest","closed_edge":false,"name":"Forest","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[13,16,15,2,5,12,26,1,4,27,14,3,24,23,25,11,],},
+    {"$GMAutoTileSet":"","%Name":"Green","closed_edge":false,"name":"Green","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[18,21,20,7,10,17,31,6,9,32,19,8,29,28,30,22,],},
+    {"$GMAutoTileSet":"","%Name":"Beach","closed_edge":false,"name":"Beach","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[46,49,48,35,38,45,59,34,37,60,47,36,57,56,58,44,],},
+    {"$GMAutoTileSet":"","%Name":"Water","closed_edge":false,"name":"Water","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[51,54,53,40,43,50,64,39,42,65,52,41,62,61,63,55,],},
+    {"$GMAutoTileSet":"","%Name":"House","closed_edge":false,"name":"House","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[79,82,81,68,71,78,92,67,70,93,80,69,90,89,91,77,],},
+    {"$GMAutoTileSet":"","%Name":"Mountain","closed_edge":false,"name":"Mountain","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[84,87,86,73,76,83,97,72,75,98,85,74,95,94,96,88,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":11,

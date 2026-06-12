@@ -1,8 +1,8 @@
 scDrawSet(fRoboto24, fa_left);
 draw_set_color(c_black);
-draw_text(16 + 1, 65 + 1, "The Reverse Guide");
+draw_text(16, 65, "The Reverse Guide");
 draw_set_color(c_white);
-draw_text(16, 64, "The Reverse Guide");
+draw_text(15, 64, "The Reverse Guide");
 
 scDrawSet(fRoboto12);
 draw_set_halign(fa_left);

@@ -7,7 +7,7 @@ clock = 0;
 flashShader = shWhiteFlash;
 animationEndScript = -1;
 hitByAttack = -1;
-collisionMap = layer_tilemap_get_id(layer_get_id("tsCol"));
+collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
 // State
 state = scPlayerStateFree;

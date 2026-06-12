@@ -1,10 +1,5 @@
-///@desc Draw Player
-
-// Reaction
-// if (reaction) draw_sprite(sReaction, reactionSubimg, x, y - 64);
-
 // Hookshot
-/*if (state == scPlayerStateHook){
+if (state == scPlayerStateHook){
 	var _originX = (image_index = 1 || image_index = 3) ? floor(x) - 7 : floor(x);
 	var _originY = floor(y) - 29;
 	var _chain = hook / hookSize;
@@ -19,7 +14,7 @@
 		)
 	}
 	draw_sprite(sHookBlade, image_index, _originX + hookX, _originY + hookY);
-}*/
+}
 
 if !(invulnerable != 0 && (invulnerable mod 8 < 2) == 0 && flash == 0){
 	if (flash != 0){

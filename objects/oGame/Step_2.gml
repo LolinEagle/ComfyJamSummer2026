@@ -1,6 +1,7 @@
 ///@desc Pause & Unpause
 if (
 	keyboard_check_pressed(vk_escape) &&
+	!instance_exists(oText) &&
 	!instance_exists(oTransition) &&
 	!global.selected &&
 	room != room_first

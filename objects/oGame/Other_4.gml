@@ -1,2 +1,2 @@
 // Layer Set Visible
-layer_set_visible("tsCol", false);
+layer_set_visible("Col", false);

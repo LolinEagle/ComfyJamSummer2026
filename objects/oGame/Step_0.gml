@@ -24,5 +24,5 @@ if (
 if (global.debug){
 	if (keyboard_check_pressed(vk_numpad0)) game_restart();
 	if (keyboard_check_pressed(vk_numpad1))
-		layer_set_visible("tsCol", !layer_get_visible("tsCol"));
+		layer_set_visible("Col", !layer_get_visible("Col"));
 }

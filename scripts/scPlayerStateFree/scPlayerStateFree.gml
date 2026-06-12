@@ -73,12 +73,7 @@ function scPlayerStateFree(){
 			case ITEM.DASH: scUseItemDash(); break;
 			case ITEM.HOOK: scUseItemHook(); break;
 			case ITEM.SPEED: scUseItemSpeed(); break;
-			case ITEM.BOMB: scUseItemBomb(); break;
 			case ITEM.MEDISHOT: scPlayerMediShot(); break;
-			case ITEM.INCENDIARY: scUseItemIncendiary(); break;
-			case ITEM.CARD_WATER: scPlayerCardWater(); break;
-			case ITEM.CARD_INCENDIARY: scPlayerCardIncendiary(); break;
-			case ITEM.CARD_LIGHTNING: scPlayerCardLightning(); break;
 			default: break;
 		}
 	}

@@ -13,6 +13,7 @@ global.cutscenesEnd[CUTSCENES.TYPE_COUNT - 1] = false;
 
 enum CUTSCENES{
 	INTRO,
+	BEACH_INTRO,
 	TYPE_COUNT
 }
 

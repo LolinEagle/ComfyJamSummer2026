@@ -1,11 +1,12 @@
+if (global.paused) return;
 event_inherited();
 
 switch (global.cutscenes){
 	case 1:
-		if (oNpc.x > 1056){
-			oNpc.x -= 2;
+		if (npc.x > 1056){
+			npc.x -= 2;
 		} else {
-			with (oNpc){
+			with (npc){
 				sprite_index = sNpcIdle;
 				localFrame = 0;
 				scAnimateSprite();
@@ -37,16 +38,17 @@ switch (global.cutscenes){
 	break;
 	case 5:
 		oPlayer.state = scPlayerStateLock;
-		with (oNpc){
+		with (npc){
 			direction = 0
 			sprite_index = sNpcRun;
 		}
-		if (oNpc.x < 1376){
-			oNpc.x += 2;
+		if (npc.x < 1376){
+			npc.x += 2;
 		} else {
 			oPlayer.state = scPlayerStateFree;
 			global.cutscenesEnd[CUTSCENES.INTRO] = true;
-			with (oNpc) instance_destroy();
+			global.cutscenes = 0;
+			with (npc) instance_destroy();
 			instance_destroy()
 		}
 	break;
