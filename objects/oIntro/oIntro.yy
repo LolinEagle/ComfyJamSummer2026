@@ -9,8 +9,8 @@
   "name":"oIntro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cutsceane",
-    "path":"folders/Objects/GameLogic/Cutsceane.yy",
+    "name":"GameLogic",
+    "path":"folders/Objects/GameLogic.yy",
   },
   "parentObjectId":{
     "name":"pCutscene",

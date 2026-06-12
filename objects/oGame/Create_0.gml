@@ -1,12 +1,10 @@
-///@desc Initialise & Globals
 randomize();
 surface_resize(application_surface, RES_W, RES_H);
 // audio_group_load(OST);
 // audio_group_load(SFX);
 
 // Game
-global.debug = false;
-global.saveSlot = 0;
+global.debug = true;
 global.paused = false;
 global.pausedBattle = false;
 global.selected = false;
@@ -28,7 +26,6 @@ global.right = ord("D");
 
 // Text
 global.questStatus = ds_map_create();
-global.questStatus[? "TheFuelQuest"] = 0;
 global.textSpeed = 0.5;
 
 // Room Transition
@@ -42,18 +39,33 @@ global.targetSpriteRun = sPlayerRun;
 // Other Instance
 global.iLifted = noone;
 instance_create_layer(0, 0, layer, oCamera);
-// instance_create_layer(0, 0, layer, oHud);
 
 // Player
 global.playerHealthMax = 3;
 global.playerHealth = global.playerHealthMax;
-global.playerManaMax = 100;
-global.playerMana = global.playerManaMax;
 global.playerMoney = 0;
-global.playerExp = 0;
-global.playerExpNeed = 0;
-global.playerLevel = 0;
-global.playerSkillPoint = 0;
 
-// Item & Weapon
-scGameItemWeapon();
+#region Item
+global.playerHasItems = false;
+global.playerItem = ITEM.NONE;
+global.playerItemEquipt = 0;
+global.playerItemEquiptArray = array_create(3, ITEM.NONE);
+global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
+global.playerItemUnlocked[ITEM.NONE] = true;
+	
+//Ammo
+global.playerItemsAmmo = array_create(ITEM.TYPE_COUNT, 0);
+global.playerItemsAmmo[ITEM.HOOK] = -1;
+	
+//Item
+global.itemText = [
+	"-",
+	"Dash",
+	"Hook",
+	"Speed",
+	"Medishot",
+];
+global.itemCollect = [];
+#endregion
+
+pauseState = 0;

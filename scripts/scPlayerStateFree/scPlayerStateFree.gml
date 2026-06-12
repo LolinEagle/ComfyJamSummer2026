@@ -54,7 +54,7 @@ function scPlayerStateFree(){
 			
 			// Make NPC face the Player
 			if (activate.entityNPC){
-				with(activate){
+				with (activate){
 					direction = point_direction(x, y, other.x, other.y);
 					image_index = CARDINAL_DIR;
 				}

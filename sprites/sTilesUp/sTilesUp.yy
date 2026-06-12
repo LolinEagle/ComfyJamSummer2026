@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"sTilesUp",
   "bboxMode":0,
-  "bbox_bottom":319,
+  "bbox_bottom":383,
   "bbox_left":0,
   "bbox_right":191,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6c49646c-c3e7-4a55-b95c-b61a8dd19b0c","name":"6c49646c-c3e7-4a55-b95c-b61a8dd19b0c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"994ffc70-ec5b-403d-9467-8de08d6e179c","name":"994ffc70-ec5b-403d-9467-8de08d6e179c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":320,
+  "height":384,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"32d19cf2-df6c-4b0b-b9fb-da204631efd5","blendMode":0,"displayName":"default","isLocked":false,"name":"32d19cf2-df6c-4b0b-b9fb-da204631efd5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a0bbaa2c-a39d-4a91-80e5-6ebf06dbd204","blendMode":0,"displayName":"default","isLocked":false,"name":"a0bbaa2c-a39d-4a91-80e5-6ebf06dbd204","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sTilesUp",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c49646c-c3e7-4a55-b95c-b61a8dd19b0c","path":"sprites/sTilesUp/sTilesUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2be5146f-8f54-4813-a84b-00821a8219b6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"994ffc70-ec5b-403d-9467-8de08d6e179c","path":"sprites/sTilesUp/sTilesUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"89af94f2-5f73-4714-80f0-fa83a77d447b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

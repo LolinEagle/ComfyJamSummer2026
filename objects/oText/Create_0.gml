@@ -3,7 +3,7 @@ x1 = RES_W_HALF;
 x2 = RES_W_HALF;
 x1Target = 96;
 x2Target = RES_W - 96;
-y1 = RES_H_HALF;
+y1 = RES_H_HALF + 8;
 y2 = RES_H - 8;
 
 // Other

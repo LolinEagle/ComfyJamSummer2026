@@ -1,4 +1,4 @@
-function scDrawSet(_font, _halign = fa_middle, _valign = fa_center){
+function scDrawSet(_font, _halign = fa_center, _valign = fa_middle){
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 	draw_set_font(_font);
@@ -10,6 +10,6 @@ function scDrawSetDefault(){
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 	draw_set_font(fRoboto12);
-	draw_set_halign(fa_middle);
-	draw_set_valign(fa_center);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
 }

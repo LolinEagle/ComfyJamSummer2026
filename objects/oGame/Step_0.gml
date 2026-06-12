@@ -7,7 +7,6 @@ if (keyboard_check_pressed(vk_f1))
 #region Player
 // Player Health & Mana
 global.playerHealth = min(global.playerHealthMax, global.playerHealth);
-global.playerMana = min(global.playerManaMax, global.playerMana);
 
 // Player Has Any Items
 if (
@@ -19,20 +18,11 @@ if (
 } else {
 	global.playerHasItems = true;
 }
-
-// Player Has Any Weapon
-if (
-	global.playerWeaponEquiptArray[0] = WEAPON.NONE &&
-	global.playerWeaponEquiptArray[1] = WEAPON.NONE &&
-	global.playerWeaponEquiptArray[2] = WEAPON.NONE
-){
-	global.playerHasWeapon = false;
-} else {
-	global.playerHasWeapon = true;
-}
 #endregion
 
 // Debug
 if (global.debug){
 	if (keyboard_check_pressed(vk_numpad0)) game_restart();
+	if (keyboard_check_pressed(vk_numpad1))
+		layer_set_visible("tsCol", !layer_get_visible("tsCol"));
 }

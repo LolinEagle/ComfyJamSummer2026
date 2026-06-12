@@ -1,2 +1,2 @@
-instance_create_layer(RES_W_HALF, RES_H_HALF - 32, layer, oTitleNewGame);
-instance_create_layer(RES_W_HALF, RES_H_HALF + 32, layer, oTitleQuit);
+instance_create_layer(96, RES_H_HALF - 40, layer, oTitleNewGame);
+instance_create_layer(96, RES_H_HALF + 40, layer, oTitleQuit);
