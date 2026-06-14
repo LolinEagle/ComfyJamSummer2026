@@ -1,7 +1,7 @@
 // Hookshot
 if (state == scPlayerStateHook){
-	var _originX = (image_index = 1 || image_index = 3) ? floor(x) - 7 : floor(x);
-	var _originY = floor(y) - 29;
+	var _originX = floor(x);
+	var _originY = floor(y) - 8;
 	var _chain = hook / hookSize;
 	var _hookDirX = sign(hookX);
 	var _hookDirY = sign(hookY);

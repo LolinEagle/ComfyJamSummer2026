@@ -5,8 +5,6 @@ flash = 0;
 clock = 0;
 
 flashShader = shWhiteFlash;
-animationEndScript = -1;
-hitByAttack = -1;
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
 // State
@@ -17,9 +15,6 @@ lastState = state
 localFrame = 0;
 sprite = sPlayerIdle;
 spriteRun = sPlayerRun;
-spriteDash = sPlayerIdle;
-reaction = false;
-reactionSubimg = 0;
 
 #region Speed
 hSpeed = 0;
@@ -38,7 +33,7 @@ distanceHook = TILE_SIZE * 6;
 hook = 0;
 hookX = 0;
 hookY = 0;
-// hookSize = sprite_get_width(sHookChain);
+hookSize = sprite_get_width(sHookChain);
 
 // Bonk
 speedBonk = 2;

@@ -65,10 +65,7 @@ function scPlayerStateFree(){
 	
 	#region Items
 	// Use Items
-	if (
-		keyItem && !keyAttackPressed && !keyAttack
-		&& global.playerHasItems && global.playerItem != ITEM.NONE
-	){
+	if (keyItem && global.playerHasItems && global.playerItem != ITEM.NONE){
 		switch(global.playerItem){
 			case ITEM.DASH: scUseItemDash(); break;
 			case ITEM.HOOK: scUseItemHook(); break;
@@ -78,17 +75,21 @@ function scPlayerStateFree(){
 		}
 	}
 	
+	if (!global.playerHasItems) return;
+	
 	// Cycle items
-	if (global.playerHasItems){
-		if (keyItemSelect){
+	if (keyItemSelect){
+		do {
 			global.playerItemEquipt++;
-			if (global.playerItemEquipt < 0){global.playerItemEquipt = 2;}
-			if (global.playerItemEquipt > 2){global.playerItemEquipt = 0;}
-		}
-		for (var _i = 0; _i < 3; _i++){
-			if (global.playerItemEquipt = _i)
-				global.playerItem = global.playerItemEquiptArray[_i];
-		}
+			if (global.playerItemEquipt < 0) global.playerItemEquipt = 3;
+			else if (global.playerItemEquipt > 3) global.playerItemEquipt = 0;
+		} until (
+			global.playerItemEquiptArray[global.playerItemEquipt] != ITEM.NONE
+		);
+	}
+	for (var _i = 0; _i <= 3; _i++){
+		if (global.playerItemEquipt == _i)
+			global.playerItem = global.playerItemEquiptArray[_i];
 	}
 	#endregion
 }

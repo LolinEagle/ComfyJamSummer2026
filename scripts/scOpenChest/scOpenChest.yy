@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scOpenChest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scOpenChest",
+  "parent":{
+    "name":"GameLogic",
+    "path":"folders/Scripts/GameLogic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

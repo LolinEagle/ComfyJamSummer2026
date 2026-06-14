@@ -12,7 +12,8 @@ global.playerHealth = min(global.playerHealthMax, global.playerHealth);
 if (
 	global.playerItemEquiptArray[0] = ITEM.NONE &&
 	global.playerItemEquiptArray[1] = ITEM.NONE &&
-	global.playerItemEquiptArray[2] = ITEM.NONE
+	global.playerItemEquiptArray[2] = ITEM.NONE &&
+	global.playerItemEquiptArray[3] = ITEM.NONE
 ){
 	global.playerHasItems = false;
 } else {
