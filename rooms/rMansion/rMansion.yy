@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_756C7CEA2","path":"rooms/rMansion/rMansion.yy",},
     {"name":"inst_359E5344","path":"rooms/rMansion/rMansion.yy",},
-    {"name":"inst_5E41C9D6","path":"rooms/rMansion/rMansion.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -19,7 +18,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetY","path":"objects/oRoomExit/oRoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"512",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetX","path":"objects/oRoomExit/oRoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"992",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":544.0,"y":1120.0,},
-        {"$GMRInstance":"v4","%Name":"inst_5E41C9D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E41C9D6","objectId":{"name":"oMansionIntro","path":"objects/oMansionIntro/oMansionIntro.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Col","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Col","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":36,"SerialiseWidth":36,"TileCompressedData":[
           -74,1,-32,0,-4,1,-32,0,-4,1,-8,0,-2,1,-12,0,-2,1,-8,0,-4,1,-8,0,-2,1,-12,0,-2,1,-8,0,-4,1,-32,0,-4,1,

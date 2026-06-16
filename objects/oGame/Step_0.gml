@@ -24,6 +24,12 @@ if (
 // Debug
 if (global.debug){
 	if (keyboard_check_pressed(vk_numpad0)) game_restart();
+
 	if (keyboard_check_pressed(vk_numpad1))
 		layer_set_visible("Col", !layer_get_visible("Col"));
+
+	if (keyboard_check_pressed(vk_numpad2)){
+		global.skipCutscenes = !global.skipCutscenes;
+		if (instance_exists(oPlayer)) oPlayer.state = scPlayerStateFree;
+	}
 }

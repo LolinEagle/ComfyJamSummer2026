@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"UseItem",
   "parent":{
-    "name":"Player",
-    "path":"folders/Scripts/Player.yy",
+    "name":"GameLogic",
+    "path":"folders/Scripts/GameLogic.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

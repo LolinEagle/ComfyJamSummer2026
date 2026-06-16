@@ -5,6 +5,7 @@ surface_resize(application_surface, RES_W, RES_H);
 
 // Game
 global.debug = true;
+global.skipCutscenes = false;
 global.paused = false;
 global.selected = false;
 global.cutscenes = 0;

@@ -70,7 +70,7 @@ function scPlayerStateFree(){
 			case ITEM.DASH: scUseItemDash(); break;
 			case ITEM.HOOK: scUseItemHook(); break;
 			case ITEM.SPEED: scUseItemSpeed(); break;
-			case ITEM.MEDISHOT: scPlayerMediShot(); break;
+			case ITEM.MEDISHOT: scUseItemMediShot(); break;
 			default: break;
 		}
 	}

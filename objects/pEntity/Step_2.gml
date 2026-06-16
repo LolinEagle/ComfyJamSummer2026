@@ -1,15 +1,13 @@
 ///@desc Entity Loop
-if (!global.paused) return;
+if (global.paused) return;
 
 depth = -bbox_bottom;
 
 if (lifted && instance_exists(oPlayer)){
-	if (oPlayer.sprite_index != sPlayerLift){
-		x = oPlayer.x;
-		y = oPlayer.y;
-		z = 42;
-		depth = oPlayer.depth - 1;
-	}
+	x = oPlayer.x - 16;
+	y = oPlayer.y - 8;
+	z = 42;
+	depth = oPlayer.depth - 1;
 }
 
 if (!lifted){

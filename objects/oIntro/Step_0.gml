@@ -1,5 +1,4 @@
-if (global.paused) return;
-event_inherited();
+if (scCutsceneStep()) return;
 
 switch (global.cutscenes){
 	case 1:

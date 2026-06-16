@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GameFunction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GameFunction",
+  "parent":{
+    "name":"GameLogic",
+    "path":"folders/Scripts/GameLogic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

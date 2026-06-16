@@ -1,7 +1,7 @@
 if (global.paused) return;
 
 // Draw set
-scDrawSet(fRoboto24, fa_center, fa_top);
+scDrawSet(LARGE, fa_center, fa_top);
 
 // Background
 scNineSliceBoxStretched(sTextBoxBg, x1, y1, x2, y2, background);

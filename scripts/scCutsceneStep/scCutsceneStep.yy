@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scCutsceneStep",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scCutsceneStep",
+  "parent":{
+    "name":"Cutscene",
+    "path":"folders/Objects/Cutscene.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
