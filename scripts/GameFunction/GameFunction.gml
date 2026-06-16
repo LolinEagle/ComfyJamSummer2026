@@ -1,5 +1,39 @@
+function scActivateLiftable(_id){
+	if (global.iLifted == noone){
+		global.iLifted = _id;
+		with (global.iLifted){
+			lifted = true;
+			persistent = true;
+		}
+	}
+}
+
+function scAnimateSprite(){
+	if (global.paused) return;
+	
+	var _totalFrames = sprite_get_number(sprite_index) / 4;
+	image_index = localFrame + (CARDINAL_DIR * _totalFrames);
+	localFrame += sprite_get_speed(sprite_index) / FPS;
+
+	// Check if animation is ended
+	if (localFrame >= _totalFrames){
+		animationEnd = true;
+		localFrame = 0;
+	} else {
+		animationEnd = false;
+	}
+}
+
 function scCollectCoin(_amount){
 	global.playerMoney += _amount;
+}
+
+function scDrawSet(_font = SMALL, _halign = fa_center, _valign = fa_middle){
+	draw_set_alpha(1);
+	draw_set_color(c_white);
+	draw_set_font(_font);
+	draw_set_halign(_halign);
+	draw_set_valign(_valign);
 }
 
 function scDropItems(_x, _y, _items){
@@ -26,6 +60,23 @@ function scEntityDropList(){
 		[oCoin, oCoin],
 		[oCoin, oCoin, oCoin]
 	);
+}
+
+function scEntityHitDestroy(){
+	instance_destroy();
+}
+
+function scEntityHitSolid(){
+	flash = 0.5;
+}
+
+function scRoomTransition(_type, _target){
+	if (!instance_exists(oTransition)){
+		with (instance_create_depth(0, 0, -9999, oTransition)){
+			type = _type;
+			target = _target;
+		}
+	}
 }
 
 function scWave(_from, _to, _time, _offset){

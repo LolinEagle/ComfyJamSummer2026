@@ -1,5 +1,5 @@
 if (global.paused) return;
-	
+
 flash = max(0, flash - 0.05);
 fric = z == 0 ? 0.04 : 0.05;
 

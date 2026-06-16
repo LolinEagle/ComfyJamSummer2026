@@ -26,7 +26,7 @@ speedTimer = 0;
 
 // Dash
 speedDash = 6;
-distanceDash = 128;
+distanceDash = 256;
 
 // Hook
 speedHook = 6;

@@ -52,7 +52,7 @@ if (global.paused){
 			break;
 			case 1:
 				global.paused = false;
-				room_goto(rMenu);
+				game_restart();
 			break;
 		}
 	}

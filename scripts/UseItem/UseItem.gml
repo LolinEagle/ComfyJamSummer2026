@@ -21,6 +21,6 @@ function scUseItemSpeed(){
 function scUseItemMediShot(){
 	if (global.playerItemsAmmo[ITEM.MEDISHOT] > 0){
 		global.playerItemsAmmo[ITEM.MEDISHOT]--;
-		global.playerHealth += 2;
+		global.playerHealth += 1;
 	}
 }

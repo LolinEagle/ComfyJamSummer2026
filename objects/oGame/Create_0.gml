@@ -9,15 +9,7 @@ global.skipCutscenes = false;
 global.paused = false;
 global.selected = false;
 global.cutscenes = 0;
-global.cutscenesEnd[CUTSCENES.TYPE_COUNT - 1] = false;
-
-enum CUTSCENES{
-	INTRO,
-	BEACH_INTRO,
-	BEACH_OUTRO,
-	MANSION_INTRO,
-	TYPE_COUNT
-}
+global.cutscenesEnd = array_create(CUTSCENES.TYPE_COUNT, false);
 
 // Option
 global.ost = 0.5;
@@ -47,7 +39,7 @@ global.playerHealth = global.playerHealthMax;
 global.playerMoney = 0;
 
 #region Item
-global.playerHasItems = false;
+global.playerNumberOfObjects = 0;
 global.playerItem = ITEM.NONE;
 global.playerItemEquipt = 0;
 global.playerItemEquiptArray = array_create(4, ITEM.NONE);

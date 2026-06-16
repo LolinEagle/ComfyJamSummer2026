@@ -1,5 +1,4 @@
 function scOpenChestItem(_item, _enum){
-	global.playerHasItems = true;
 	global.playerItem = _enum;
 	global.playerItemEquipt = _item;
 	global.playerItemEquiptArray[_item] = _enum;

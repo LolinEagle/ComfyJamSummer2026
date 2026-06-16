@@ -1,5 +1,4 @@
 function scPlayerThrow(){
-	if (global.debug) show_debug_message("scPlayerThrow() called");
 	with (global.iLifted){
 		// Other
 		lifted = false;

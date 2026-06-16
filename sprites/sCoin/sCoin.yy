@@ -26,7 +26,7 @@
   ],
   "name":"sCoin",
   "nineSlice":null,
-  "origin":0,
+  "origin":2,
   "parent":{
     "name":"Entity",
     "path":"folders/Sprites/Entity.yy",
@@ -53,7 +53,7 @@
     "eventStubScript":null,
     "eventToFunction":{},
     "length":4.0,
-    "lockOrigin":true,
+    "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
       "Keyframes":[],
@@ -87,7 +87,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,

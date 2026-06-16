@@ -65,7 +65,7 @@ function scPlayerStateFree(){
 	
 	#region Items
 	// Use Items
-	if (keyItem && global.playerHasItems && global.playerItem != ITEM.NONE){
+	if (keyItem && global.playerItem != ITEM.NONE){
 		switch(global.playerItem){
 			case ITEM.DASH: scUseItemDash(); break;
 			case ITEM.HOOK: scUseItemHook(); break;
@@ -75,7 +75,7 @@ function scPlayerStateFree(){
 		}
 	}
 	
-	if (!global.playerHasItems) return;
+	if (!global.playerNumberOfObjects > 0) return;
 	
 	// Cycle items
 	if (keyItemSelect){

@@ -2,32 +2,61 @@ if (room == room_first || oPlayer.state == scPlayerStateLock) return;
 
 scDrawSet(LARGE);
 
-// Player health
+#region Player health
 var _x = 8;
-for (var _i = global.playerHealth; _i > 0; _i--){
+for (var _i = 0; _i < global.playerHealthMax; _i++){
+	var _subimg = min(max((global.playerHealth - _i) * 4, 0), 4);
 	draw_sprite_ext(
-		sHudHealth, 0, _x, 8, 2, 2, image_angle, image_blend, image_alpha
+		sHudHealth, _subimg, _x, 8, 2, 2, image_angle, image_blend, image_alpha
 	);
 	_x += 32;
 }
-for (var _i = global.playerHealthMax - global.playerHealth; _i > 0; _i--){
+#endregion
+
+#region Item box
+var _y = 40;
+draw_sprite(sHudItemBox, global.playerNumberOfObjects > 1, 8, _y);
+if (global.playerNumberOfObjects > 1){
+	draw_set_font(MEDIUM);
+	draw_text(68, _y + 20, "A");
+}
+if (global.playerItemEquiptArray[global.playerItemEquipt] != ITEM.NONE)
+	draw_sprite(sHudItem, global.playerItemEquipt, 8, _y);
+var _tmp = global.playerItemsAmmo[global.playerItemEquipt + 1];
+if (_tmp > 0){
+	draw_set_font(LARGE);
+	draw_set_colour(c_black);
+	draw_text(30, _y + 20, _tmp);
+	draw_set_colour(c_white);
+	draw_text(29, _y + 19, _tmp);
+}
+if (global.playerNumberOfObjects > 0){
+	draw_set_font(LARGE);
+	draw_text(28, _y + 52, "F");
+}
+#endregion
+
+#region Top right
+_x = 0;
+if (global.playerItemEquiptArray[ITEM.MEDISHOT - 1] != ITEM.NONE){
+	_x = 32;
 	draw_sprite_ext(
-		sHudHealth, 4, _x, 8, 2, 2, image_angle, image_blend, image_alpha
+		sPhone, 0, RES_W - 26, 10, 0.5, 0.5,
+		image_angle, image_blend, image_alpha
 	);
-	_x += 32;
+	draw_set_font(LARGE);
+	draw_text(RES_W - 16, 54, "A");
 }
 
-// Item box
-if (global.playerHasItems){
-	draw_sprite(sHudItemBox, 0, 8, 40);
-	if (global.playerItemEquiptArray[global.playerItemEquipt] != ITEM.NONE)
-		draw_sprite(sHudItem, global.playerItemEquipt, 8, 40);
-	var _tmp = global.playerItemsAmmo[global.playerItemEquipt + 1];
-	if (_tmp > 0){
-		draw_set_colour(c_black);
-		draw_text(30, 60, _tmp);
-		draw_set_colour(c_white);
-		draw_text(29, 59, _tmp);
-	}
-	draw_text(28, 96, "F")
-}
+// Money
+draw_set_font(LARGE);
+draw_set_halign(fa_right);
+draw_sprite(sCoin, 0, RES_W - 8 - _x, 13);
+draw_text(RES_W - 24 - _x, 19, global.playerMoney);
+#endregion
+
+#region Bottom left
+draw_set_font(SMALL);
+draw_set_halign(fa_left);
+draw_text(8, RES_H - 12, "E : interact");
+#endregion
