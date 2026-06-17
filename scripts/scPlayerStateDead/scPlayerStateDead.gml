@@ -3,27 +3,10 @@ function scPlayerStateDead(){
 	vSpeed = 0;
 	
 	// If just arriving in this state
-	if (sprite_index != sPlayerDie && sprite_index != sPlayerDead){
-		sprite_index = sPlayerDie;
+	if (sprite_index != sPlayerSleep){
+		sprite_index = sPlayerSleep;
 		image_index = 0;
-		image_speed = 0.7;
-	}
-
-	// Is animation ending this frame
-	if (image_index + image_speed > image_number){
-		if (sprite_index == sPlayerDie){
-			image_speed = max(0, image_speed - 0.03);
-			if (image_speed < 0.07){
-				image_index = 0;
-				sprite_index = sPlayerDead;
-				image_speed = 1.0;
-			}
-		} else {
-			image_speed = 0;
-			image_index = image_number - 1;
-			global.targetX = -1;
-			global.targetY = -1;
-			scRoomTransition(TRANS_TYPE.SLIDE, rVillage);
-		}
+		image_speed = 0;
+		scRoomTransition(TRANS_TYPE.SLIDE, rMenu);
 	}
 }

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNpcIdle",
-    "path":"sprites/sNpcIdle/sNpcIdle.yy",
+    "name":"sNpc",
+    "path":"sprites/sNpc/sNpc.yy",
   },
   "spriteMaskId":null,
   "visible":true,

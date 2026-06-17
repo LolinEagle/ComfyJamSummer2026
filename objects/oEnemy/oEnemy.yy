@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oHud",
+  "%Name":"oEnemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oHud",
+  "name":"oEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameLogic",
-    "path":"folders/Objects/GameLogic.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"pEnemy",
+    "path":"objects/pEnemy/pEnemy.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sEnemy",
+    "path":"sprites/sEnemy/sEnemy.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

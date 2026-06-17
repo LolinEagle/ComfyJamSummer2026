@@ -91,5 +91,12 @@ function scPlayerStateFree(){
 		if (global.playerItemEquipt == _i)
 			global.playerItem = global.playerItemEquiptArray[_i];
 	}
+	
+	// Shop
+	if (keyItemShop && global.playerItemEquiptArray[3] != ITEM.NONE){
+		instance_create_depth(RES_W_HALF, RES_H_HALF, 0, oShopSandwich);
+		oHud.isShopping = true;
+		state = scPlayerStateLock;
+	}
 	#endregion
 }

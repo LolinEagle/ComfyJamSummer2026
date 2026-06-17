@@ -6,7 +6,7 @@ switch (global.cutscenes){
 			npc.x -= 2;
 		} else {
 			with (npc){
-				sprite_index = sNpcIdle;
+				sprite_index = sNpc;
 				localFrame = 0;
 				scAnimateSprite();
 			}

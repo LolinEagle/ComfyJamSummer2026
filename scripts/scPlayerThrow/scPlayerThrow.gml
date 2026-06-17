@@ -19,6 +19,6 @@ function scPlayerThrow(){
 		ystart = y;
 	}
 	global.iLifted = noone;
-	sprite = sPlayerIdle;
+	sprite = sPlayer;
 	spriteRun = sPlayerRun;
 }

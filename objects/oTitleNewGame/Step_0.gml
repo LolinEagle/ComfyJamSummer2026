@@ -1,8 +1,4 @@
-///@desc Image index & Show text
-if (
-	instance_position(mouse_x, mouse_y, id) &&
-	image_index != 2
-){
+if (instance_position(mouse_x, mouse_y, id) && image_index != 2){
 	image_index = 1;
 	selected = true;
 } else {

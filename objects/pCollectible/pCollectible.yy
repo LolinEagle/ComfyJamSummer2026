@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Collectible",
-    "path":"folders/Objects/Entity/Collectible.yy",
+    "path":"folders/Objects/Collectible.yy",
   },
   "parentObjectId":{
     "name":"pEntity",

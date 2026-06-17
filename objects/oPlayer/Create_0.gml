@@ -1,4 +1,3 @@
-///@desc Variable
 z = 0;
 invulnerable = 0;
 flash = 0;
@@ -14,7 +13,7 @@ lastState = state
 
 // Sprite
 localFrame = 0;
-sprite = sPlayerIdle;
+sprite = sPlayer;
 spriteRun = sPlayerRun;
 
 #region Speed

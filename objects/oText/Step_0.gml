@@ -1,6 +1,6 @@
 // Text Speed
 lerpProgress += (1 - lerpProgress) / 50;
-textProgress += global.textSpeed;
+textProgress += 0.5;
 
 // Textbox character
 x1 = lerp(x1, x1Target, lerpProgress);

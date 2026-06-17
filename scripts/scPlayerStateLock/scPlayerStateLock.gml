@@ -7,4 +7,11 @@ function scPlayerStateLock(){
 	sprite_index = sprite;
 	localFrame = 0;
 	scAnimateSprite();
+	
+	// Shop
+	if (oHud.isShopping && keyItemShop){
+		instance_destroy(oShopSandwich);
+		oHud.isShopping = false;
+		state = scPlayerStateFree;
+	}
 }

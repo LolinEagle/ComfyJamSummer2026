@@ -13,11 +13,12 @@
 // Bind
 #macro KEY_USE keyboard_check_pressed(ord("E"))
 #macro KEY_ITEM keyboard_check_pressed(ord("F"))
-#macro KEY_ITEM_SELECT keyboard_check_pressed(ord("A"))
+#macro KEY_ITEM_SELECT keyboard_check_pressed(ord("G"))
+#macro KEY_ITEM_SHOP keyboard_check_pressed(ord("R"))
 #macro KEY_ATTACK_PRESSED mouse_check_button_pressed(mb_left)
 
 // Transition
-#macro TRANSITION_SPEED 0.03
+#macro TRANSITION_SPEED 0.02
 #macro OUT 0
 #macro IN 1
 

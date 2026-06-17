@@ -11,7 +11,7 @@ if (
 	global.targetSpriteRun = oPlayer.spriteRun;
 			
 	// Transition
-	with (oPlayer) state = scPlayerStateTransition;
+	oPlayer.state = scPlayerStateTransition;
 	scRoomTransition(transitionType, targetRoom);
 
 	// End the Transition
