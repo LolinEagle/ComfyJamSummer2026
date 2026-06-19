@@ -2,6 +2,7 @@ function scActivateLiftable(_id){
 	if (global.iLifted == noone){
 		global.iLifted = _id;
 		with (global.iLifted){
+			entityCollision = false;
 			lifted = true;
 			persistent = true;
 		}
@@ -28,9 +29,15 @@ function scCollectCoin(_amount){
 	global.playerMoney += _amount;
 }
 
-function scDrawSet(_font = SMALL, _halign = fa_center, _valign = fa_middle){
-	draw_set_alpha(1);
-	draw_set_color(c_white);
+function scDrawSet(
+	_alpha = 1,
+	_color = c_white,
+	_font = SMALL,
+	_halign = fa_center,
+	_valign = fa_middle
+){
+	draw_set_alpha(_alpha);
+	draw_set_color(_color);
 	draw_set_font(_font);
 	draw_set_halign(_halign);
 	draw_set_valign(_valign);
@@ -71,7 +78,7 @@ function scEntityHitSolid(){
 }
 
 function scRoomTransition(_type, _target){
-	if (!instance_exists(oTransition)){
+	if (instance_exists(oTransition) == false){
 		with (instance_create_depth(0, 0, -9999, oTransition)){
 			type = _type;
 			target = _target;

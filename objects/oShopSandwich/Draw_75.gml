@@ -1,6 +1,6 @@
 if (global.paused) return;
 
-scDrawSet(SMALL, fa_left, fa_middle);
+scDrawSet(1, c_white, SMALL, fa_left, fa_middle);
 draw_sprite_ext(
 	sprite_index, image_index, x, y, 0.8, 1,
 	image_angle, image_blend, image_alpha

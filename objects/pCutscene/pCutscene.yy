@@ -30,6 +30,7 @@
     {"$GMObjectProperty":"v2","%Name":"alpha","filters":[],"listItems":[],"multiselect":false,"name":"alpha","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"fadeout","filters":[],"listItems":[],"multiselect":false,"name":"fadeout","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"whatToDo","filters":[],"listItems":[],"multiselect":false,"name":"whatToDo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"isPlaying","filters":[],"listItems":[],"multiselect":false,"name":"isPlaying","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

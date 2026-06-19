@@ -24,7 +24,7 @@ wait = 0;
 // Enemy Sprites
 sprMove = sEnemy;
 
-//Enemy Scripts
+// Enemy Scripts
 enemyScripts[ENEMYSTATE.IDLE] = -1;
 enemyScripts[ENEMYSTATE.WANDER] = -1;
 enemyScripts[ENEMYSTATE.CHASE] = -1;
@@ -32,6 +32,8 @@ enemyScripts[ENEMYSTATE.ATTACK] = -1;
 enemyScripts[ENEMYSTATE.HURT] = -1;
 enemyScripts[ENEMYSTATE.DIE] = -1;
 enemyScripts[ENEMYSTATE.WAIT] = scEnemyWait;
+
+enemySpeed = random_range(enemySpeed - 1, enemySpeed + 1);
 
 // Entity Drop List
 scEntityDropList();

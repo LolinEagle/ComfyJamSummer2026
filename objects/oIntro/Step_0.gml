@@ -38,7 +38,7 @@ switch (global.cutscenes){
 	case 5:
 		oPlayer.state = scPlayerStateLock;
 		with (npc){
-			direction = 0
+			direction = 0;
 			sprite_index = sNpcRun;
 		}
 		if (npc.x < 1376){

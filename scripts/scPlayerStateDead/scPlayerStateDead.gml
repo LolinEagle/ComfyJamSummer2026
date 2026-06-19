@@ -7,6 +7,9 @@ function scPlayerStateDead(){
 		sprite_index = sPlayerSleep;
 		image_index = 0;
 		image_speed = 0;
-		scRoomTransition(TRANS_TYPE.SLIDE, rMenu);
+		scRoomTransition(
+			TRANS_TYPE.SLIDE,
+			room == rMansion ? rBadEnding : room
+		);
 	}
 }

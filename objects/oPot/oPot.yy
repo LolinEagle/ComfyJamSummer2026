@@ -10,6 +10,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entityActivateScript","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"scActivateLiftable",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entityActivateArgs","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[id]",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entityThrowBreak","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entityCollision","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
     "name":"Entity",

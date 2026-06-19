@@ -19,8 +19,11 @@ function scUseItemSpeed(){
 }
 
 function scUseItemMediShot(){
-	if (global.playerItemsAmmo[ITEM.MEDISHOT] > 0){
+	if (
+		global.playerItemsAmmo[ITEM.MEDISHOT] > 0 &&
+		global.playerHealth < global.playerHealthMax
+	){
 		global.playerItemsAmmo[ITEM.MEDISHOT]--;
-		global.playerHealth += 1;
+		global.playerHealth++;
 	}
 }

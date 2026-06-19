@@ -2,8 +2,8 @@ if (scCutsceneStep()) return;
 
 switch (global.cutscenes){
 	case 1:
-		if (npc.x > endX){
-			npc.x -= 2;
+		if (npc.y > endY){
+			npc.y -= 2;
 		} else {
 			with (npc){
 				sprite_index = sNpc;
@@ -12,9 +12,7 @@ switch (global.cutscenes){
 			}
 		
 			// TextBox
-			scNewTextBox("You don't know your cardinal\ndirections or what?", 1);
-			scNewTextBox("Don't go to the right.", 1);
-			scNewTextBox("Stop following me.", 1, true);
+			scNewTextBox("I know you've decided not to listen to me, but you shouldn't go in there.", 1, true);
 
 			global.cutscenes = 2;
 		}
@@ -23,14 +21,14 @@ switch (global.cutscenes){
 	case 3:
 		oPlayer.state = scPlayerStateLock;
 		with (npc){
-			direction = 0;
+			direction = 270;
 			sprite_index = sNpcRun;
 		}
-		if (npc.x < startX){
-			npc.x += 2;
+		if (npc.y < startY){
+			npc.y += 2;
 		} else {
 			oPlayer.state = scPlayerStateFree;
-			global.cutscenesEnd[CUTSCENES.BEACH_INTRO] = true;
+			global.cutscenesEnd[CUTSCENES.BEACH_OUTRO] = true;
 			global.cutscenes = 0;
 			with (npc) instance_destroy();
 			instance_destroy()

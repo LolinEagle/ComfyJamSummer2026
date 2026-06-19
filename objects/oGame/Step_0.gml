@@ -22,6 +22,7 @@ if (global.debug){
 		layer_set_visible("Col", !layer_get_visible("Col"));
 
 	if (keyboard_check_pressed(vk_numpad2)){
+		global.cutscenes = 0;
 		global.skipCutscenes = !global.skipCutscenes;
 		if (instance_exists(oPlayer)) oPlayer.state = scPlayerStateFree;
 	}
@@ -35,6 +36,20 @@ if (global.debug){
 		global.playerItemEquipt = 2;
 	}
 
+	if (keyboard_check_pressed(vk_numpad4)){
+		global.playerHealthMax = 15;
+		global.playerHealth = global.playerHealthMax;
+	}
+
 	if (keyboard_check_pressed(vk_up)) global.playerHealth += 0.25;
 	if (keyboard_check_pressed(vk_down)) global.playerHealth -= 0.25;
+
+	if (keyboard_check_pressed(vk_left) && room != room_first){
+		global.cutscenes = 0;
+		room_goto_previous();
+	}
+	if (keyboard_check_pressed(vk_right) && room != room_last){
+		global.cutscenes = 0;
+		room_goto_next();
+	}
 }

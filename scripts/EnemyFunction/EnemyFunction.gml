@@ -88,7 +88,7 @@ function scEnemyChase(){
 
 	// Move toward Target
 	if (instance_exists(target)){
-		image_speed = 1.0;
+		image_speed = 1;
 	
 		// Target Location
 		xTo = target.x;
@@ -116,7 +116,7 @@ function scEnemyChase(){
 	}
 
 	// Check for attack
-	if (
+	/*if (
 		instance_exists(target)
 		&& point_distance(x, y, target.x, target.y) <= enemyAttaackRadius
 	){
@@ -128,7 +128,7 @@ function scEnemyChase(){
 		// target 8px past the player
 		xTo += lengthdir_x(8, dir);
 		yTo += lengthdir_y(8, dir);
-	}
+	}*/
 }
 
 function scEnemyAttack(){

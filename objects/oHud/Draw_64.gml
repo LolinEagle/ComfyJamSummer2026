@@ -1,7 +1,9 @@
-if (global.paused || room == room_first) return;
-if (isShopping == false && oPlayer.state == scPlayerStateLock) return;
+if (
+	global.paused || instance_exists(oPlayer) == false ||
+	isShopping == false && oPlayer.state == scPlayerStateLock
+) return;
 
-scDrawSet(LARGE);
+scDrawSet(1, c_white, LARGE);
 
 #region Player health
 var _x = 8;
@@ -66,8 +68,8 @@ draw_text(8, RES_H - 12, "E : interact");
 var _scale = 5;
 if (isShopping){
 	draw_sprite_ext(
-		sPhone, 0, RES_W_HALF - (18 * _scale), RES_H_HALF - (32 * _scale), _scale, _scale,
-		image_angle, image_blend, image_alpha
+		sPhone, 0, RES_W_HALF - (18 * _scale), RES_H_HALF - (32 * _scale),
+		_scale, _scale, image_angle, image_blend, image_alpha
 	);
 }
 #endregion

@@ -1,6 +1,6 @@
 if !(entityChestOpen && --entityChestDraw > 0) return;
 
-scDrawSet(SMALL, fa_middle, fa_center);
+scDrawSet(1, c_white, SMALL, fa_middle, fa_center);
 
 if (entityActivateArgs[0] == 3){
 	// Exception

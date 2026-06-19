@@ -1,5 +1,5 @@
 // Draw set
-scDrawSet(LARGE, fa_center, fa_top);
+scDrawSet(1, c_white, LARGE, fa_center, fa_top);
 
 // Background
 scNineSliceBoxStretched(sTextBoxBg, x1, y1, x2, y2, background);

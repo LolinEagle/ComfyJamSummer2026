@@ -1,4 +1,5 @@
-///@desc Update
+if (global.paused || instance_exists(oIntro) == false && global.cutscenes > 0)
+	return;
 
 // Destination
 if (instance_exists(follow)){
