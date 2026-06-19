@@ -18,6 +18,6 @@ if (responses[0] != -1 && textProgress >= string_length(message)){
 
 // Text
 draw_set_color(c_black);
-draw_text_ext(((x1 + x2) / 2) + 2, y1 + 20, _print, 32, 448);
+draw_text_ext(((x1 + x2) / 2) + 2, y1 + 20, _print, 32, 432);
 draw_set_color(c_white);
-draw_text_ext((x1 + x2) / 2, y1 + 18, _print, 32, 448);
+draw_text_ext((x1 + x2) / 2, y1 + 18, _print, 32, 432);

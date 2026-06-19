@@ -10,7 +10,7 @@ if (lifted && instance_exists(oPlayer)){
 	depth = oPlayer.depth - 1;
 }
 
-if (!lifted){
+if (lifted == false){
 	// Be thrown
 	if (thrown){
 		throwDistanceTravelled = min(

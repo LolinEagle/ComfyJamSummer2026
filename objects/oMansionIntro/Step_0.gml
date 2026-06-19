@@ -19,9 +19,9 @@ switch (global.cutscenes){
 	break;
 	case 2:
 		// Wait
-		oPlayer.state = scPlayerStateLock;
 	break;
 	case 3:
+		oPlayer.state = scPlayerStateLock;
 		enemy = instance_create_depth(592, 384, 0, oEnemy);
 		with (enemy){
 			direction = 90;
@@ -52,6 +52,6 @@ switch (global.cutscenes){
 		oPlayer.state = scPlayerStateFree;
 		global.cutscenesEnd[CUTSCENES.MANSION_INTRO] = true;
 		global.cutscenes = 0;
-		instance_destroy()
+		instance_destroy();
 	break;
 }

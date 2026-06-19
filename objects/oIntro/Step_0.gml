@@ -26,6 +26,13 @@ switch (global.cutscenes){
 			oPlayer.state = scPlayerStateLock;
 			global.cutscenes = 3;
 		}
+		
+		// Secret ending
+		if (++secretEnding > FPS * FPS * 5){
+			oPlayer.state = scPlayerStateTransition;
+			scRoomTransition(TRANS_TYPE.SLIDE, rGoodEnding);
+			instance_destroy();
+		}
 	break;
 	case 3:
 		scNewTextBox("Whatever...", 1);
@@ -48,7 +55,7 @@ switch (global.cutscenes){
 			global.cutscenesEnd[CUTSCENES.INTRO] = true;
 			global.cutscenes = 0;
 			with (npc) instance_destroy();
-			instance_destroy()
+			instance_destroy();
 		}
 	break;
 }

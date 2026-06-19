@@ -5,7 +5,8 @@ function scOpenChestItem(_item, _enum){
 }
 
 function scOpenChest(_item){
-	if (!activate.entityChestOpen){
+	if (activate.entityChestOpen == false){
+		audio_play_sound(snChest, 0, false);
 		switch (_item){
 			case 0:
 				scOpenChestItem(_item, ITEM.DASH);

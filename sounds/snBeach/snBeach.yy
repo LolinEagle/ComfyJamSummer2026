@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snBeach",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":11.32678,
+  "exportDir":"",
+  "name":"snBeach",
+  "parent":{
+    "name":"Ost",
+    "path":"folders/Sounds/Ost.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snBeach.ogg",
+  "volume":1.0,
+}

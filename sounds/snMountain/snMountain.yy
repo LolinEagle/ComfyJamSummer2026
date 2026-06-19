@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snMountain",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":25.601883,
+  "exportDir":"",
+  "name":"snMountain",
+  "parent":{
+    "name":"Ost",
+    "path":"folders/Sounds/Ost.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snMountain.ogg",
+  "volume":1.0,
+}

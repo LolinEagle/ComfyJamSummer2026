@@ -4,7 +4,10 @@ function scPlayerStateLock(){
 	vSpeed = 0;
 
 	// Sprite
-	if (instance_exists(oMansionIntro) == false){
+	if (
+		instance_exists(oMansionIntro) == false &&
+		instance_exists(oGoodEnding) == false
+	){
 		sprite_index = sprite;
 		localFrame = 0;
 	}

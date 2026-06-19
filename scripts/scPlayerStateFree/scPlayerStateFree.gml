@@ -75,7 +75,7 @@ function scPlayerStateFree(){
 		}
 	}
 	
-	if (!global.playerNumberOfObjects > 0) return;
+	if (global.playerNumberOfObjects <= 0) return;
 	
 	// Cycle items
 	if (keyItemSelect){

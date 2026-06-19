@@ -31,7 +31,7 @@ switch (global.cutscenes){
 			global.cutscenesEnd[CUTSCENES.BEACH_OUTRO] = true;
 			global.cutscenes = 0;
 			with (npc) instance_destroy();
-			instance_destroy()
+			instance_destroy();
 		}
 	break;
 }

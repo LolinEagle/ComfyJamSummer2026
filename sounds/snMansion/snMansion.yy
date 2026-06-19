@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snMansion",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":12.167256,
+  "exportDir":"",
+  "name":"snMansion",
+  "parent":{
+    "name":"Ost",
+    "path":"folders/Sounds/Ost.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snMansion.ogg",
+  "volume":1.0,
+}

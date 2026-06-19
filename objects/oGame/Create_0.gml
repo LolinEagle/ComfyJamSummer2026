@@ -2,7 +2,7 @@ randomize();
 surface_resize(application_surface, RES_W, RES_H);
 
 #region Global
-global.debug = true;
+global.debug = false;
 global.skipCutscenes = false;
 global.paused = false;
 global.selected = false;
@@ -10,8 +10,13 @@ global.cutscenes = 0;
 global.cutscenesEnd = array_create(CUTSCENES.TYPE_COUNT, false);
 
 // Option
-global.up = ord("Z");
-global.left = ord("Q");
+if (os_get_language() == "fr"){
+    global.up = ord("Z");
+    global.left = ord("Q");
+} else {
+    global.up = ord("W");
+    global.left = ord("A");
+}
 global.down = ord("S");
 global.right = ord("D");
 
@@ -44,6 +49,7 @@ global.playerItemsAmmo[ITEM.HOOK] = -1;
 #endregion
 
 pauseState = 0;
+soundId = snForest;
 
 // Persistent instance
 instance_create_layer(0, 0, layer, oCamera);

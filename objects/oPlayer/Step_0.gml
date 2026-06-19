@@ -34,4 +34,4 @@ if (speedWalk != originalSpeedWalk && --speedTimer <= 0){
 }
 
 // Depth
-depth = -y;
+depth = -y - 1;
