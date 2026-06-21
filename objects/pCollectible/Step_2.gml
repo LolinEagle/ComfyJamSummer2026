@@ -21,7 +21,7 @@ if (instance_exists(oPlayer)){
 	var _px = oPlayer.x;
 	var _py = oPlayer.y;
 	var _dist = point_distance(x, y, _px, _py);
-		
+
 	// Magnetise Radius
 	if (_dist < 24 || magnetise){
 		spd += 0.5;
@@ -29,7 +29,7 @@ if (instance_exists(oPlayer)){
 		fric = 0;
 		magnetise = true;
 		direction = point_direction(x, y, _px, _py);
-			
+
 		// Collect Radius
 		if (_dist < 8){
 			if (collectScriptArg != -1){

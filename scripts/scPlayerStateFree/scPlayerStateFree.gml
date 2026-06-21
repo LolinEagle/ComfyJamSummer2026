@@ -51,7 +51,7 @@ function scPlayerStateFree(){
 			script_execute_ext(
 				activate.entityActivateScript, activate.entityActivateArgs
 			);
-			
+
 			// Make NPC face the Player
 			if (activate.entityNPC){
 				with (activate){
@@ -62,7 +62,7 @@ function scPlayerStateFree(){
 		}
 	}
 	#endregion
-	
+
 	#region Items
 	// Use Items
 	if (keyItem && global.playerItem != ITEM.NONE){
@@ -74,9 +74,9 @@ function scPlayerStateFree(){
 			default: break;
 		}
 	}
-	
+
 	if (global.playerNumberOfObjects <= 0) return;
-	
+
 	// Cycle items
 	if (keyItemSelect){
 		do {
@@ -91,7 +91,7 @@ function scPlayerStateFree(){
 		if (global.playerItemEquipt == _i)
 			global.playerItem = global.playerItemEquiptArray[_i];
 	}
-	
+
 	// Shop
 	if (keyItemShop && global.playerItemEquiptArray[3] != ITEM.NONE){
 		instance_create_depth(RES_W_HALF, RES_H_HALF, 0, oShopSandwich);

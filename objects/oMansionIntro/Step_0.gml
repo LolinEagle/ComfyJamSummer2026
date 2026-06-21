@@ -9,7 +9,7 @@ switch (global.cutscenes){
 				sprite_index = sPlayer;
 				scAnimateSprite();
 			}
-		
+
 			// TextBox
 			with (oChest) image_index = 1;
 			scNewTextBox("Empty.", 1, true);
@@ -39,7 +39,7 @@ switch (global.cutscenes){
 				localFrame = 0;
 				scAnimateSprite();
 			}
-		
+
 			scNewTextBox("I'm going to eat you alive MUHAHAHA !", 1, true);
 
 			global.cutscenes = 5;

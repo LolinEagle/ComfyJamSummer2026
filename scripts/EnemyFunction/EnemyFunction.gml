@@ -36,13 +36,13 @@ function scEnemyWander(){
 		// Stop moving
 		hSpeed = 0;
 		vSpeed = 0;
-	
+
 		// End our move Animation
 		if (image_index < 1){
 			image_speed = 0;
 			image_index = 0;
 		}
-	
+
 		// Wait
 		if (++wait >= waitDuration){
 			wait = 0;
@@ -59,13 +59,13 @@ function scEnemyWander(){
 		var _distanceToGo = point_distance(x, y, xTo, yTo);
 		var _speedThisFrame = enemySpeed;
 		if (_distanceToGo < enemySpeed) _speedThisFrame = _distanceToGo;
-	
+
 		// Go to
 		dir = point_direction(x, y, xTo, yTo);
 		hSpeed = lengthdir_x(_speedThisFrame, dir);
 		vSpeed = lengthdir_y(_speedThisFrame, dir);
 		if (hSpeed != 0) image_xscale = sign(hSpeed);
-	
+
 		// Collide & Move
 		scEnemyTileCollision();
 	}
@@ -89,7 +89,7 @@ function scEnemyChase(){
 	// Move toward Target
 	if (instance_exists(target)){
 		image_speed = 1;
-	
+
 		// Target Location
 		xTo = target.x;
 		YTo = target.y;
@@ -105,10 +105,10 @@ function scEnemyChase(){
 			vSpeed = lengthdir_y(_distanceToGo, dir);
 		}
 		if (hSpeed != 0) image_xscale = sign(hSpeed);
-	
+
 		// Collide & Move
 		scEnemyTileCollision();
-	
+
 		// Aggro lost
 		if (point_distance(x, y, target.x, target.y) >= enemyAggroLost){
 			state = ENEMYSTATE.WANDER;
@@ -124,7 +124,7 @@ function scEnemyChase(){
 		sprite_index = sprAttack;
 		image_index = 0;
 		image_speed = 1;
-		
+
 		// target 8px past the player
 		xTo += lengthdir_x(8, dir);
 		yTo += lengthdir_y(8, dir);
@@ -149,7 +149,7 @@ function scEnemyAttack(){
 		hSpeed = lengthdir_x(_spd, dir);
 		vSpeed = lengthdir_y(_spd, dir);
 		if (hSpeed != 0) image_xscale = sign(hSpeed);
-		
+
 		// Commit
 		if (scEnemyTileCollision() == true){
 			xTo = x;
@@ -165,7 +165,7 @@ function scEnemyAttack(){
 		}
 	}
 }
-	
+
 function scEnemyHurt(){
 	sprite_index = sprHurt;
 	var _distanceToGo = point_distance(x, y, xTo, yTo);
@@ -175,7 +175,7 @@ function scEnemyHurt(){
 		hSpeed = lengthdir_x(enemySpeed, dir);
 		vSpeed = lengthdir_y(enemySpeed, dir);
 		if (hSpeed != 0) image_xscale = -sign(hSpeed);
-		
+
 		// Collide & move, if theres a collision, then stop knockback
 		if (scEnemyTileCollision()){
 			xTo = x;
@@ -202,7 +202,7 @@ function scEnemyDie(){
 		x = xTo;
 		y = yTo;
 	}
-	
+
 	// Instance Destroy
 	var _if = sprite_get_speed(sprite_index) / game_get_speed(gamespeed_fps);
 	if (image_index + _if >= image_number){

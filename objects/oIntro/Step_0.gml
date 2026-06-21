@@ -10,7 +10,7 @@ switch (global.cutscenes){
 				localFrame = 0;
 				scAnimateSprite();
 			}
-		
+
 			// TextBox
 			scNewTextBox("You are awake, you should\ngo back to sleep.", 1);
 			scNewTextBox("You shouldn't press WASD\nto move.", 1);
@@ -26,8 +26,7 @@ switch (global.cutscenes){
 			oPlayer.state = scPlayerStateLock;
 			global.cutscenes = 3;
 		}
-		
-		// Secret ending
+				// Secret ending
 		if (++secretEnding > FPS * FPS * 5){
 			oPlayer.state = scPlayerStateTransition;
 			scRoomTransition(TRANS_TYPE.SLIDE, rGoodEnding);

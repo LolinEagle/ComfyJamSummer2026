@@ -10,7 +10,7 @@ switch (global.cutscenes){
 				localFrame = 0;
 				scAnimateSprite();
 			}
-		
+
 			// TextBox
 			scNewTextBox("You don't know your cardinal\ndirections or what?", 1);
 			scNewTextBox("Don't go to the right.", 1);

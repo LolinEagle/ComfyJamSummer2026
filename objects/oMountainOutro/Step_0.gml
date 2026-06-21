@@ -10,7 +10,7 @@ switch (global.cutscenes){
 				localFrame = 0;
 				scAnimateSprite();
 			}
-		
+
 			// TextBox
 			scNewTextBox("You finally decided to listen to what I say.", 1);
 			scNewTextBox("Thank you.", 1);

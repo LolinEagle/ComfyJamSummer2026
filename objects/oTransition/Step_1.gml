@@ -3,7 +3,7 @@ if (instance_exists(oPlayer) && oPlayer.state != scPlayerStateDead)
 
 if (leading == OUT){
 	percent = min(1, percent + TRANSITION_SPEED);
-	
+
 	// If 100% or more
 	if (percent >= 1){
 		// Exception
@@ -18,7 +18,7 @@ if (leading == OUT){
 	}
 } else {
 	percent = max(0, percent - TRANSITION_SPEED);
-	
+
 	// If 0% or less
 	if (percent <= 0){
 		if (instance_exists(oPlayer)) oPlayer.state = scPlayerStateFree;

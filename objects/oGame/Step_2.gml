@@ -1,4 +1,14 @@
-///@desc Pause & Unpause
+if(
+	keyboard_check_pressed(vk_escape) && room != room_first &&
+	instance_exists(oHud) && oHud.isShopping
+){
+	instance_destroy(oShopSandwich);
+	oHud.isShopping = false;
+	oPlayer.state = scPlayerStateFree;
+	return;
+}
+
+// Pause & Unpause
 if (
 	keyboard_check_pressed(vk_escape) &&
 	instance_exists(oText) == false &&
@@ -8,7 +18,6 @@ if (
 ){
 	// Menu
 	global.selected = false;
-	
 	// Core Pause
 	global.paused = !global.paused;
 	if (global.paused){
@@ -30,14 +39,13 @@ if (
 		}
 	}
 }
-
 if (global.paused){
 	keyUp	= keyboard_check_pressed(global.up) || keyboard_check_pressed(vk_up);
 	keyDown = keyboard_check_pressed(global.down) || keyboard_check_pressed(vk_down);
 	pauseState += keyDown - keyUp;
 	if (pauseState > 1) pauseState = 0;
 	if (pauseState < 0) pauseState = 1;
-	
+
 	if (keyboard_check_pressed(vk_enter)){
 		switch (pauseState){
 			case 0:

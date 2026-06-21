@@ -7,7 +7,7 @@ function scPlayerStateHook(){
 		hookY = 0;
 		hookState = HOOKSTATE.EXTENDING;
 		hookedEntity = noone;
-		
+
 		// Update sprite
 		sprite_index = sPlayerHook;
 		image_index = CARDINAL_DIR;
@@ -72,7 +72,7 @@ function scPlayerStateHook(){
 			}
 		break;
 	}
-	
+
 	if (hook <= 0){
 		hookedEntity = noone;
 		state = scPlayerStateFree;

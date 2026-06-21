@@ -1,4 +1,3 @@
-///@desc Entity Loop
 if (global.paused) return;
 
 depth = -bbox_bottom;

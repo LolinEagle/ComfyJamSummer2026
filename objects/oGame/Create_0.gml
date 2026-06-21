@@ -42,7 +42,7 @@ global.playerNumberOfObjects = 0;
 global.playerItem = ITEM.NONE;
 global.playerItemEquipt = 0;
 global.playerItemEquiptArray = array_create(4, ITEM.NONE);
-	
+
 // Ammo
 global.playerItemsAmmo = array_create(ITEM.TYPE_COUNT, 0);
 global.playerItemsAmmo[ITEM.HOOK] = -1;

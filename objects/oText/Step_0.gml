@@ -29,11 +29,11 @@ if (KEY_USE || KEY_ATTACK_PRESSED || keyboard_check_pressed(vk_enter)){
 				);
 			}
 		}
-		
+
 		// Destroy the Text Box
 		if (cutscenes) global.cutscenes++;
 		instance_destroy();
-		
+
 		// Text Queued
 		if (instance_exists(oTextQueued))
 			with (oTextQueued) ticket--;

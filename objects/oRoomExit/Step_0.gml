@@ -9,7 +9,7 @@ if (
 	global.targetDirection = oPlayer.direction;
 	global.targetSprite = oPlayer.sprite;
 	global.targetSpriteRun = oPlayer.spriteRun;
-			
+
 	// Transition
 	oPlayer.state = scPlayerStateTransition;
 	scRoomTransition(transitionType, targetRoom);

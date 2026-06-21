@@ -11,7 +11,7 @@ switch (global.cutscenes){
 				sprite_index = sPlayer;
 				scAnimateSprite();
 			}
-		
+
 			// TextBox
 			scNewTextBox("Yum!", 1, true);
 

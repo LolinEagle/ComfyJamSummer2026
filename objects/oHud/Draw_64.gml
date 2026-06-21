@@ -1,7 +1,8 @@
 if (
 	global.paused || instance_exists(oPlayer) == false ||
 	isShopping == false && oPlayer.state == scPlayerStateLock
-) return;
+)
+	return;
 
 scDrawSet(1, c_white, LARGE);
 
@@ -59,9 +60,9 @@ draw_text(RES_W - 25 - _x, 19, global.playerMoney);
 #endregion
 
 #region Bottom left
-draw_set_font(SMALL);
+draw_set_font(MEDIUM);
 draw_set_halign(fa_left);
-draw_text(8, RES_H - 12, "E : interact");
+draw_text(8, RES_H - 18, "E : interact");
 #endregion
 
 #region Middle

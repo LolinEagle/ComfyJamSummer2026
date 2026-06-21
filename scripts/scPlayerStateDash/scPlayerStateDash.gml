@@ -7,7 +7,7 @@ function scPlayerStateDash(){
 
 	// Change State
 	if (moveDistanceRemaining <= 0) state = scPlayerStateFree;
-	
+
 	// If collide with something
 	if (_collided){
 		state = scPlayerStateBonk;

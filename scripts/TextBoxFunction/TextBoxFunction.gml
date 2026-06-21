@@ -4,11 +4,11 @@ function scNewTextBox(_message, _background = 0, _cutscenes = false){
 		// Message
 		message = _message;
 		originInstance = instance_exists(other) ? other.id : noone;
-	
+
 		// Background & Cutscenes
 		background = _background
 		cutscenes = _cutscenes;
-	
+
 		// Responses
 		if (argument_count > 3){
 			responses = argument[3];
@@ -58,7 +58,7 @@ function scNineSliceBoxStretched(_a0, _a1, _a2, _a3, _a4, _a5){
 	);
 
 	// CORNERS
-	
+
 	// TOP LEFT
 	draw_sprite_part(
 		_a0, _i, 0, 0, _s, _s, _x1, _y1
@@ -77,7 +77,7 @@ function scNineSliceBoxStretched(_a0, _a1, _a2, _a3, _a4, _a5){
 	);
 
 	// EDGES
-	
+
 	// LEFT
 	draw_sprite_part_ext(
 		_a0, _i,

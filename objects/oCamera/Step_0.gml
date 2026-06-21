@@ -1,4 +1,4 @@
-if (global.paused || instance_exists(oIntro) == false && global.cutscenes > 0)
+if (global.paused || (instance_exists(oIntro) == false && global.cutscenes > 0))
 	return;
 
 // Destination
@@ -18,7 +18,15 @@ y = clamp(y, viewHeightHalf, room_height - viewHeightHalf);
 // Screenshake
 x += random_range(-shakeRemain, shakeRemain);
 y += random_range(-shakeRemain, shakeRemain);
-shakeRemain = max(0, shakeRemain - ((1 / shakeLenght) * shakeMagnitude));
+
+// Prevent division by zero
+if (shakeLenght > 0){
+	shakeRemain = max(0, shakeRemain - ((1 / shakeLenght) * shakeMagnitude));
+} else {
+	shakeRemain = 0;
+}
 
 // Camera set view
-camera_set_view_pos(cam, x - viewWidthHalf, y - viewHeightHalf);
+var _x = x - viewWidthHalf;
+var _y = y - viewHeightHalf
+camera_set_view_pos(view_camera[0], _x, _y);

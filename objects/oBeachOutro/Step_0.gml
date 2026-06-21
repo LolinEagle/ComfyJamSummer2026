@@ -10,7 +10,7 @@ switch (global.cutscenes){
 				localFrame = 0;
 				scAnimateSprite();
 			}
-		
+
 			// TextBox
 			scNewTextBox("I know you've decided not to listen to me, but you shouldn't go in there.", 1, true);
 

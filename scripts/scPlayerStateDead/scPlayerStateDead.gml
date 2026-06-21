@@ -1,7 +1,7 @@
 function scPlayerStateDead(){
 	hSpeed = 0;
 	vSpeed = 0;
-	
+
 	// If just arriving in this state
 	if (sprite_index != sPlayerSleep){
 		sprite_index = sPlayerSleep;

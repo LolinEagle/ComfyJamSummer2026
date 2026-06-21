@@ -5,6 +5,7 @@ draw_set_color(c_white);
 draw_text(16, 72, "The Reverse Guide");
 
 scDrawSet(1, c_white, SMALL, fa_left);
-draw_text(16, RES_H - 20, "Press F1 for full screen");
+if (os_browser == browser_not_a_browser)
+	draw_text(16, RES_H - 20, "Press F1 for full screen");
 draw_set_halign(fa_right);
 draw_text(RES_W - 15, RES_H - 20, VERSION);

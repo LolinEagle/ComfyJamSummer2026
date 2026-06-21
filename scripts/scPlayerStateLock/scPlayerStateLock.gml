@@ -12,7 +12,7 @@ function scPlayerStateLock(){
 		localFrame = 0;
 	}
 	scAnimateSprite();
-	
+
 	// Shop
 	if (instance_exists(oHud) && oHud.isShopping && keyItemShop){
 		instance_destroy(oShopSandwich);
