@@ -1,5 +1,5 @@
 // Game
-#macro VERSION "v 0.1.1"
+#macro VERSION "v 0.1.2"
 #macro FPS 60
 #macro TILE_SIZE 32
 #macro CARDINAL_DIR round(direction / 90)

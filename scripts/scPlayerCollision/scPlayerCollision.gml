@@ -19,7 +19,8 @@ function scPlayerCollision(){
 	while (_entityCount > 0){
 		var _entityCheck = _entityList[| 0];
 		if (_entityCheck.entityCollision == true){
-			_snapX = sign(hSpeed) == -1 ? _entityCheck.bbox_right + 1 : _entityCheck.bbox_left - 1;
+			if (sign(hSpeed) == -1) _snapX = _entityCheck.bbox_right + 1;
+			else _snapX = _entityCheck.bbox_left - 1;
 			x = _snapX;
 			hSpeed = 0;
 			_collision = true;
@@ -53,7 +54,8 @@ function scPlayerCollision(){
 	while (_entityCount > 0){
 		var _entityCheck = _entityList[| 0];
 		if (_entityCheck.entityCollision == true){
-			_snapY = sign(vSpeed) == -1 ? _entityCheck.bbox_bottom + 1 : _entityCheck.bbox_top - 1;
+			if (sign(vSpeed) == -1) _snapY = _entityCheck.bbox_bottom + 1;
+			else _snapY = _entityCheck.bbox_top - 1;
 			y = _snapY;
 			vSpeed = 0;
 			_collision = true;

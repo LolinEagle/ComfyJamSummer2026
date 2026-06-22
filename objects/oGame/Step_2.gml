@@ -40,8 +40,10 @@ if (
 	}
 }
 if (global.paused){
-	keyUp	= keyboard_check_pressed(global.up) || keyboard_check_pressed(vk_up);
-	keyDown = keyboard_check_pressed(global.down) || keyboard_check_pressed(vk_down);
+	keyUp =
+		keyboard_check_pressed(global.up) || keyboard_check_pressed(vk_up);
+	keyDown =
+		keyboard_check_pressed(global.down) || keyboard_check_pressed(vk_down);
 	pauseState += keyDown - keyUp;
 	if (pauseState > 1) pauseState = 0;
 	if (pauseState < 0) pauseState = 1;

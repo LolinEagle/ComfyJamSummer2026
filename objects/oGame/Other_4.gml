@@ -2,7 +2,7 @@ if (layer_exists("Col")) layer_set_visible("Col", false);
 
 // Audio
 switch (room){
-    case rMenu: soundId = snForest; break;
+	case rMenu: soundId = snForest; break;
 	case rForest: soundId = snForest; break;
 	case rBeach: soundId = snBeach; break;
 	case rMansion: soundId = snMansion; break;

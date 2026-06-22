@@ -22,9 +22,12 @@ switch (global.cutscenes){
 		// Wait
 	break;
 	case 3:
-		scNewTextBox("After all your efforts, you are finally rewarded with all these delicious treats.", 3);
+		scNewTextBox(@"After all your efforts, you are finally rewarded with 
+all these delicious treats.", 3);
 		scNewTextBox("...", 3);
-		scNewTextBox("You ate so much that you ended up falling asleep.", 3, true);
+		scNewTextBox(
+			"You ate so much that you ended up falling asleep.", 3, true
+		);
 		global.cutscenes = 4;
 	break;
 	case 4:

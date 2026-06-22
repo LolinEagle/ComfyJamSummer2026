@@ -49,14 +49,14 @@ function scDropItems(_x, _y, _items){
 		var _anglePerItem = 360 / _itemsLength;
 		var _angle = random(360);
 		for (var i = 0; i < _itemsLength; i++){
-			with (instance_create_layer(_x, _y, "Instances", _items[i])){
+			with (instance_create_depth(_x, _y, 0, _items[i])){
 				direction = _angle;
 				spd = 0.75 + (_itemsLength * 0.1) + random(0.1);
 			}
 			_angle += _anglePerItem;
 		}
 	} else {
-		instance_create_layer(_x, _y, "Instances", _items[0]);
+		instance_create_depth(_x, _y, 0, _items[0]);
 	}
 }
 

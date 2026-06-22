@@ -12,7 +12,7 @@ switch (global.cutscenes){
 			}
 
 			// TextBox
-			scNewTextBox("You don't know your cardinal\ndirections or what?", 1);
+			scNewTextBox("You don't know your cardinal directions or what?", 1);
 			scNewTextBox("Don't go to the right.", 1);
 			scNewTextBox("Stop following me.", 1, true);
 

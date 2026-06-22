@@ -10,7 +10,7 @@ playerY = oPlayer.y;
 oPlayer.state = scPlayerStateLock;
 
 // NPC
-npc = instance_create_layer(1312, 864, "Instances", oNpc);
+npc = instance_create_depth(1312, 864, 0, oNpc);
 with (npc){
 	direction = 180;
 	sprite_index = sNpcRun;

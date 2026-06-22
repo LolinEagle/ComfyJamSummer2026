@@ -1,4 +1,3 @@
-///@desc Cause a room transition
 if (
 	instance_exists(oPlayer) && position_meeting(oPlayer.x, oPlayer.y, id) &&
 	oPlayer.state != scPlayerStateDead && instance_exists(oTransition) == false

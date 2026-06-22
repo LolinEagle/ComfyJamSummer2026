@@ -12,7 +12,8 @@ switch (global.cutscenes){
 			}
 
 			// TextBox
-			scNewTextBox("I know you've decided not to listen to me, but you shouldn't go in there.", 1, true);
+			scNewTextBox(@"I know you've decided not to listen to me, but you 
+shouldn't go in there.", 1, true);
 
 			global.cutscenes = 2;
 		}

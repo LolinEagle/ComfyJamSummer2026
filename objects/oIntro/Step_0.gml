@@ -12,8 +12,8 @@ switch (global.cutscenes){
 			}
 
 			// TextBox
-			scNewTextBox("You are awake, you should\ngo back to sleep.", 1);
-			scNewTextBox("You shouldn't press WASD\nto move.", 1);
+			scNewTextBox("You are awake, you should go back to sleep.", 1);
+			scNewTextBox("You shouldn't press WASD to move.", 1);
 
 			global.cutscenes = 2;
 		}

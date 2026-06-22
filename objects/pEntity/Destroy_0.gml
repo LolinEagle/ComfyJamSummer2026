@@ -1,4 +1,3 @@
-///@desc Drop fragment & items
 if (entityFragmentCount > 0){
 	fragmentArray = array_create(entityFragmentCount, entityFragment);
 	scDropItems(x, y, fragmentArray);

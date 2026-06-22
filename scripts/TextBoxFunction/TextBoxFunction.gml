@@ -1,6 +1,6 @@
 function scNewTextBox(_message, _background = 0, _cutscenes = false){
 	var _obj = instance_exists(oText) ? oTextQueued : oText;
-	with (instance_create_layer(0, 0, "Instances", _obj)){
+	with (instance_create_depth(0, 0, 0, _obj)){
 		// Message
 		message = _message;
 		originInstance = instance_exists(other) ? other.id : noone;
@@ -34,13 +34,6 @@ function scNewTextBox(_message, _background = 0, _cutscenes = false){
 }
 
 function scNineSliceBoxStretched(_a0, _a1, _a2, _a3, _a4, _a5){
-	///@desc NineSliceBoxStretched(sprite, x1, y1, x2, y2)
-	///@arg sprite
-	///@arg x1 left
-	///@arg y1 top
-	///@arg x2 right
-	///@arg y2 bottom
-	///@arg index image_index
 	var _s = sprite_get_width(_a0) / 3;
 	var _x1 = _a1;
 	var _y1 = _a2;

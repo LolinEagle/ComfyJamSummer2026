@@ -1,4 +1,4 @@
-randomize();
+random_set_seed(date_current_datetime());
 surface_resize(application_surface, RES_W, RES_H);
 
 #region Global
@@ -11,11 +11,11 @@ global.cutscenesEnd = array_create(CUTSCENES.TYPE_COUNT, false);
 
 // Option
 if (os_get_language() == "fr"){
-    global.up = ord("Z");
-    global.left = ord("Q");
+	global.up = ord("Z");
+	global.left = ord("Q");
 } else {
-    global.up = ord("W");
-    global.left = ord("A");
+	global.up = ord("W");
+	global.left = ord("A");
 }
 global.down = ord("S");
 global.right = ord("D");
@@ -52,5 +52,5 @@ pauseState = 0;
 soundId = snForest;
 
 // Persistent instance
-instance_create_layer(0, 0, layer, oCamera);
-instance_create_layer(0, 0, layer, oHud);
+instance_create_depth(0, 0, 0, oCamera);
+instance_create_depth(0, 0, 0, oHud);
